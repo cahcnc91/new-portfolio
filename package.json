@@ -1,6 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "v12.3.1",
+    "npm": "6.14.4"
+  },
   "description": "Portfolio of camila",
   "repository": "https://github.com/cahcnc91/new-portfolio",
   "license": "MIT",
@@ -13,6 +17,7 @@
   },
   "dependencies": {
     "babel-minify-webpack-plugin": "^0.3.1",
+    "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "express-static-gzip": "^2.0.6",
     "html-webpack-plugin": "^4.2.0",
