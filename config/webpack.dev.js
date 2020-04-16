@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   entry: {
@@ -23,14 +23,14 @@ module.exports = {
   devtool: "source-map",
   resolve: {
     alias: {
-      vue$: "vue/dist/vue.esm.js"
-    }
+      vue$: "vue/dist/vue.esm.js",
+    },
   },
   module: {
     rules: [
       {
         test: /\.vue$/,
-        use: [{loader: "vue-loader"}],
+        use: [{ loader: "vue-loader" }],
       },
       {
         test: /\.js$/,
@@ -49,6 +49,10 @@ module.exports = {
           },
           { loader: "css-loader" },
         ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.jpg$/,
