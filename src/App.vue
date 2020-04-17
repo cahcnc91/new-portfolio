@@ -1,15 +1,18 @@
 <template>
-  <About></About>
+  <div>
+    <Hero></Hero>
+    <About></About>
+  </div>
 </template>
 
 <script>
-import Profile from './components/Profile.vue'
-import About from './components/AboutSection/About.vue'
+import Hero from "./components/HeroSection/Hero.vue";
+import About from "./components/AboutSection/About.vue";
 
 export default {
   components: {
-    Profile,
-    About
-  }
-}
+    Hero,
+    About,
+  },
+};
 </script>
