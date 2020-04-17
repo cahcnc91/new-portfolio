@@ -1,6 +1,10 @@
 .figure-shape {
   width: 20rem;
   height: 20rem;
+
+  @include respond(phone) {
+    display: none;
+  }
   float: left;
   -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
@@ -8,13 +12,30 @@
   -webkit-clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem);
   position: relative;
-  
 
   &__image {
     height: 100%;
     transform: translateX(-4rem) scale(1);
     backface-visibility: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
+  }
+
+  &__image--mobile-div {
+    display: none;
+
+    @include respond(phone) {
+      display: inline-block;
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+
+  &__image--mobile-img {
+    width: auto;
+    height: 100%;
   }
 
   &__caption {
@@ -28,7 +49,7 @@
     backface-visibility: hidden;
     font-size: 2.6rem;
     font-weight: 400;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   &:hover &__caption {

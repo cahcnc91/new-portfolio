@@ -3,6 +3,14 @@
     <div class="row u-center-text ">
       <h2 class="heading-secondary" id="about">About</h2>
       <div class="about u-margin-bottom-small">
+        <div class="figure-shape__image--mobile-div">
+         <img
+            src="../../images/camilaluna.png"
+            alt="camila coder web developer"
+            class="figure-shape__image--mobile-img"
+          />
+        </div>
+       
         <figure class="figure-shape">
           <img
             src="../../images/camilaluna.png"
@@ -14,7 +22,7 @@
           </figcaption>
         </figure>
 
-        <p class="paragraph u-margin-top-s">
+        <p class="paragraph">
           I'm a full-stack developer based in NYC, currently working for a real
           estate data startup. I love coding, I'm extremely social and I'm
           obsessed with being productive
@@ -25,7 +33,7 @@
     </div>
     <div class="row">
       <AboutCard :skills="frontEnd.skills" :iconName="frontEnd.icon" :title="frontEnd.title"></AboutCard>
-      <AboutCard :skills="backend.skills" :iconName="backEnd.icon" :title="backEnd.title"></AboutCard>
+      <AboutCard :skills="backEnd.skills" :iconName="backEnd.icon" :title="backEnd.title"></AboutCard>
       <AboutCard :skills="other.skills" :iconName="other.icon" :title="other.title"></AboutCard>
     </div>
   </section>
@@ -50,9 +58,9 @@ export default {
         skills: ['Nodejs', 'MySQL, Postgres', 'MongoDB, Firebase', 'GraphQL', 'RESTful APIs', 'Graph APIs'],
         icon: "database"
       },
-      others: {
+      other: {
         title: "Others",
-        skills: ["Version Control (Git)", "TypeScript", "Testing Frameworks", "Documentation", "Agile Methodologies"],
+        skills: ["Version Control (Git)", "TypeScript", "Testing Frameworks", "Documentation", "Agile Methodologies", "CMS"],
         icon: 'code-branch'
       }
     }
