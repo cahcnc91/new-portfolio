@@ -53,7 +53,7 @@ module.exports = {
         use: ["vue-style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.jpg$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: "file-loader",
@@ -82,7 +82,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       inject: true,
-      title: "Camila Coder's Portfolio",
+      title: "camilacoder Full-Stack Developer | JavaScript",
     }),
     new webpack.DefinePlugin({
       "process.env": {

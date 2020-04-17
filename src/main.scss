@@ -1,8 +1,27 @@
-.profile {
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  flex-flow: column;
-}
+@import "css/abstracts/functions";
+@import "css/abstracts/mixins";
+@import "css/abstracts/variables";
+
+@import "css/base/base";
+@import "css/base/animations";
+@import "css/base/typografy";
+@import "css/base/utilities";
+
+@import "css/components/button";
+@import "css/components/composition";
+@import "css/components/feature-box";
+@import "css/components/card";
+@import "css/components/skill";
+@import "css/components/round-pic";
+@import "css/components/bg-video";
+@import "css/components/story";
+@import "css/components/form";
+@import "css/components/popup";
+
+@import "css/layouts/grid";
+@import "css/layouts/header";
+@import "css/layouts/about";
+@import "css/layouts/footer";
+@import "css/layouts/navigation";
+
+@import "css/pages/home";
