@@ -1,7 +1,9 @@
 import Vue from "vue";
-import App from "./App.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import Fragment from 'vue-fragment'
+import Fragment from 'vue-fragment';
+import router from './router';
+import App from './App.vue';
+
 import {
   faCode,
   faAngleDoubleRight,
@@ -38,6 +40,8 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 new Vue({
-  el: "#app",
-  render: (h) => h(App),
-});
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App }
+})

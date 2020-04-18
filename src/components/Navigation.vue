@@ -17,7 +17,12 @@
           <a href="#about" class="navigation__link">ABOUT</a>
         </li>
         <li class="navigation__item">
-          <a href="#project-see" class="navigation__link">PROJECTS</a>
+          <router-link
+            to="/projects"
+            v-slot="{ href, route, navigate, isActive, isExactActive }"
+          >
+            <a :active="isActive" :href="href" @click="navigate" class="navigation__link">PROJECTS</a>
+          </router-link>
         </li>
         <li class="navigation__item">
           <a href="#code-samples" class="navigation__link">COMPONENTS</a>
@@ -29,3 +34,5 @@
     </nav>
   </div>
 </template>
+
+<script></script>

@@ -2,6 +2,9 @@ const path = require("path");
 const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+var dotenv = require('dotenv').config({path: __dirname + '/.env'});
+
+console.log(JSON.stringify(dotenv.parsed))
 
 module.exports = {
   entry: {
@@ -82,5 +85,9 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./src/index.html",
     }),
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(dotenv.parsed)
+  }),
+
   ],
 };
