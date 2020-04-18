@@ -6,22 +6,25 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 4rem;
+  width: 100%;
+  margin: 0;
 
   @include respond(tab-port) {
     width: 50%;
     padding: 2rem;
   }
 
-  @include respond(phone) {
-    width: 70%;
-    padding: 1rem;
+  &__column {
+    @include respond(tab-port) {
+      display:flex;
+      justify-content: center;
+      width: 50%;
+    }
   }
 
-  svg * {
-    fill: url(#rg);
+  @include respond(phone) {
+    width: 100%;
+    padding: 1rem;
   }
 
   &__icon {
@@ -41,7 +44,7 @@
   }
 
   &__skills {
-    width: 70%;
+    width: 55%;
     display: flex;
     margin: 0 auto;
 
@@ -51,6 +54,7 @@
     }
 
     @include respond(phone) {
+      justify-content: space-between;
       padding: 0 2rem;
       width: 100%;
     }
@@ -80,9 +84,6 @@
       );
       -webkit-background-clip: text;
       color: transparent;
-    }
-
-    &--less {
     }
   }
 

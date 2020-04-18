@@ -1,70 +1,87 @@
 <template>
   <section class="section-about">
-    <div class="row u-center-text ">
-      <h2 class="heading-secondary" id="about">About</h2>
-      <div class="about u-margin-bottom-small">
-        <div class="figure-shape__image--mobile-div">
-         <img
-            src="../../images/camilaluna.png"
-            alt="camila coder web developer"
-            class="figure-shape__image--mobile-img"
-          />
-        </div>
-       
-        <figure class="figure-shape">
-          <img
-            src="../../images/camilaluna.png"
-            alt="camila coder web developer"
-            class="figure-shape__image"
-          />
-          <figcaption class="figure-shape__caption">
-            Luna says hello!
-          </figcaption>
-        </figure>
+    <p class="about__text" id="about-section-top">
+      I'm a full-stack developer based in NYC. I love coding, I'm extremely
+      social and I'm obsessed with being productive.
+    </p>
 
-        <p class="paragraph">
-          I'm a full-stack developer based in NYC, currently working for a real
-          estate data startup. I love coding, I'm extremely social and I'm
-          obsessed with being productive
-          <br />(I just feel great when I'm able to solve THAT problem before
-          the day is over).
-        </p>
-      </div>
-    </div>
+    <p></p>
+    <p class="about__text--sm u-margin-top u-margin-bottom">
+      I'm experienced with a range of different technologies<br />
+      Some of them are:
+    </p>
     <div class="row">
-      <AboutCard :skills="frontEnd.skills" :iconName="frontEnd.icon" :title="frontEnd.title"></AboutCard>
-      <AboutCard :skills="backEnd.skills" :iconName="backEnd.icon" :title="backEnd.title"></AboutCard>
-      <AboutCard :skills="other.skills" :iconName="other.icon" :title="other.title"></AboutCard>
+      <AboutCard
+        :skills="frontEnd.skills"
+        :iconName="frontEnd.icon"
+        :title="frontEnd.title"
+      ></AboutCard>
+      <AboutCard
+        :skills="backEnd.skills"
+        :iconName="backEnd.icon"
+        :title="backEnd.title"
+      ></AboutCard>
+      <AboutCard
+        :skills="other.skills"
+        :iconName="other.icon"
+        :title="other.title"
+      ></AboutCard>
     </div>
+    <p class="about__text--sm u-margin-top u-margin-bottom">
+      Interested in working together?<br />Contact me:
+    </p>
+    <ContactInfo></ContactInfo>
   </section>
 </template>
 
 <script>
-import AboutCard from './AboutCard.vue'
+import AboutCard from "./AboutCard.vue";
+import ContactInfo from "./ContactInfo.vue";
 
 export default {
   components: {
-    AboutCard
+    AboutCard,
+    ContactInfo,
   },
-  data () {
+  data() {
     return {
       frontEnd: {
         title: "Front End",
-        skills: ["HTML, CSS", "CSS preprocessors", 'Webpack', "React", "Vue", "Apollo"],
+        skills: [
+          "HTML, CSS",
+          "CSS preprocessors",
+          "Webpack",
+          "React",
+          "Vue",
+          "Apollo",
+        ],
         icon: "code",
       },
       backEnd: {
         title: "Back End",
-        skills: ['Nodejs', 'MySQL, Postgres', 'MongoDB, Firebase', 'GraphQL', 'RESTful APIs', 'Graph APIs'],
-        icon: "database"
+        skills: [
+          "Nodejs",
+          "MySQL, Postgres",
+          "MongoDB, Firebase",
+          "GraphQL",
+          "RESTful APIs",
+          "Graph APIs",
+        ],
+        icon: "database",
       },
       other: {
         title: "Others",
-        skills: ["Version Control (Git)", "TypeScript", "Testing Frameworks", "Documentation", "Agile Methodologies", "CMS"],
-        icon: 'code-branch'
-      }
-    }
-  }
-}
+        skills: [
+          "Version Control (Git)",
+          "TypeScript",
+          "Testing Frameworks",
+          "Documentation",
+          "Agile Methodologies",
+          "CMS",
+        ],
+        icon: "code-branch",
+      },
+    };
+  },
+};
 </script>
-

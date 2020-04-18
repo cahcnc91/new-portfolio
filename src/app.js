@@ -1,19 +1,43 @@
 import Vue from "vue";
-import App from './App.vue';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCode, faAngleDoubleRight, faDatabase, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import Typewriter from 'vue-typewriter';
+import App from "./App.vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import Fragment from 'vue-fragment'
+import {
+  faCode,
+  faAngleDoubleRight,
+  faDatabase,
+  faCodeBranch,
+  faPhone,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faNpm,
+  faGithub,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import Typewriter from "vue-typewriter";
 
 Vue.use(Typewriter);
+Vue.use(Fragment.Plugin)
 
-library.add(faCode, faAngleDoubleRight, faDatabase, faCodeBranch)
+library.add(
+  faCode,
+  faAngleDoubleRight,
+  faDatabase,
+  faCodeBranch,
+  faPhone,
+  faEnvelope,
+  faLinkedinIn,
+  faNpm,
+  faGithub
+);
 
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
-    el: "#app",
-    render: h => h(App)
-})
+  el: "#app",
+  render: (h) => h(App),
+});

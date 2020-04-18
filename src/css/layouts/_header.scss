@@ -1,13 +1,6 @@
 .header {
   height: 105vh;
   width: 100%;
-  /*
-  background-image: linear-gradient(
-    to right bottom,
-     rgba(127, 213, 112, 0.801),
-      rgba(40, 180, 133, 0.801)) , 
-      url("image/background-code.jpg");
-  */
   background-image: linear-gradient(
       rgba($color-black, 0.8),
       rgba($color-black, 0.8)
@@ -16,29 +9,32 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
-  position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  position: relative;
 
-  @include respond(phone) {
-     
+  &__wrapper {
+    flex: 1;
+    width: 100%;
+    padding: 7rem;
+    position: absolute;
+    height: 100%;
   }
 
   &__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
+    height: 30%;
   }
 
-  &__logo {
-    height: 4.5rem;
+  &__logo-name {
+    color: white;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 2.3rem;
+    letter-spacing: 0.2rem;
   }
 
   &__text-box {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    height:25%;
   }
 
   &__text-box > .typewrite {
@@ -47,30 +43,27 @@
     letter-spacing: 1rem;
 
     @include respond(phone) {
-      letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
       font-size: 4rem;
     }
   }
 
-  &__text-static {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $color-white;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 0.7rem;
-  }
-
   &__button {
     bottom: 0;
-    display: block;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    & button:last-child {
+      margin: 0 2rem;
+      @include respond(phone) {
+        margin: 2rem 0;
+      }
+    }
   }
 }
 

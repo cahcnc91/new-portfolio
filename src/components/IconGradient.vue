@@ -6,9 +6,12 @@
         <stop stop-color="#28b485" offset="1" />
       </radialGradient>
     </svg>
-    <font-awesome-icon
-      icon="angle-double-right"
-      class="feature-box__skills--small-icon"
-    />
+    <font-awesome-icon :icon="iconName" :class="classes" />
   </div>
 </template>
+
+<script>
+export default {
+  props: { iconName: {type: [String, Array]}, classes: String },
+};
+</script>

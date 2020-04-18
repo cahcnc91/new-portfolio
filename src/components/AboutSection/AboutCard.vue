@@ -1,17 +1,17 @@
 <template>
-  <div class="col-1-of-3">
+  <div class="col-1-of-3 feature-box__column">
     <div class="feature-box">
-      <svg width="0" height="0">
-        <radialGradient id="rg" r="150%" cx="25%" cy="107%">
-          <stop stop-color="#7ed56f" offset="0.25" />
-          <stop stop-color="#28b485" offset="1" />
-        </radialGradient>
-      </svg>
-      <font-awesome-icon :icon="iconName" class="feature-box__icon" />
+      <IconGradient
+        :iconName="iconName"
+        classes="feature-box__icon"
+      ></IconGradient>
       <h3 class="heading-tertiary u-margin-bottom-small">{{ title }}</h3>
       <ul>
         <li v-for="skill in skills" :key="skill" class="feature-box__skills">
-          <IconArrowRight></IconArrowRight>
+          <IconGradient
+            iconName="angle-double-right"
+            classes="feature-box__skills--small-icon"
+          ></IconGradient>
           <p class="feature-box__text">{{ skill }}</p>
         </li>
       </ul>
@@ -20,13 +20,16 @@
 </template>
 
 <script>
-import IconArrowRight from "./IconArrowRight.vue";
+import IconGradient from "../IconGradient.vue";
 
 export default {
   components: {
-    IconArrowRight,
+    IconGradient,
   },
-  props: { skills: { type: Array, default: () => {} }, iconName: String, title: String},
+  props: {
+    skills: { type: Array, default: () => {} },
+    iconName: String,
+    title: String,
+  },
 };
-
 </script>

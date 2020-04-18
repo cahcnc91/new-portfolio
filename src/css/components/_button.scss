@@ -25,13 +25,12 @@
   }
 
   &--white {
-    padding: 1.6rem 6rem;
-    border: 0.2rem solid $color-white;
+    border: 1px solid $color-white;
     color: $color-white;
-    font-size: 1.8rem;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    background-color: transparent;
 
     &:hover {
       background-color: $color-primary;
@@ -39,12 +38,22 @@
     }
   }
 
+  &--size1 {
+    width: 25rem;
+    @include respond(phone) {
+      width: 100%;
+    }
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
   &--transparent-green {
     border: 0.2rem solid $color-white;
     color: $color-white;
     font-size: 1.6rem;
     font-weight: 500;
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 0;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
@@ -62,15 +71,11 @@
       $color-primary-lighter,
       $color-primary-darker
     );
-    border-radius: 3px;
     color: $color-white;
-    font-size: 1.7rem;
-    font-weight: 500;
-    padding: 1rem 7rem;
+    border: 1px solid $color-primary-lighter;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    border: none;
 
     &:hover {
       transform: translateY(-3px);
