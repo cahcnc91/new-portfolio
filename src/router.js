@@ -4,7 +4,7 @@ import Home from './layout/Home.vue';
 import Projects from './layout/Projects.vue';
 
 Vue.use(Router)
-console.log(process.env.BASE_URL)
+
 export default new Router({
   base: process.env.BASE_URL,
   routes: [

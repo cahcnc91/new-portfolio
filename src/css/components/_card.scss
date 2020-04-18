@@ -54,7 +54,11 @@
     
 
     &--1 {
-      // background-image: url(images/thinkempire.png);
+      background-image: linear-gradient(
+        rgba($color-black, 0.5),
+        rgba($color-black, 0.1)
+      ),
+      url(images/thinkempire.png);
       // linear-gradient(
       //   to right bottom,
       //   $color-secondary-lighter,
@@ -63,11 +67,21 @@
     }
 
     &--2 {
-      background-image: url(images/puppydate.jpg);
+      background-image: linear-gradient(
+        rgba($color-black, 0.5),
+        rgba($color-black, 0.1)
+      ),
+
+      url(images/resovere.png);
     }
 
     &--3 {
-      background-image: url(images/grocery-app.jpg);
+      background-image: linear-gradient(
+        rgba($color-black, 0.5),
+        rgba($color-black, 0.1)
+      ),
+
+      url(images/puppydate.jpg);
     }
 
   }

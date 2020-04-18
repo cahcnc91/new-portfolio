@@ -29,6 +29,7 @@ export default {
         duration = 800,
         easing = "easeOutExpo",
         callback = null;
+        console.log(el)
 
       if (el) {
         anime({

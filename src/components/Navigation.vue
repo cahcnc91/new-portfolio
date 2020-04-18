@@ -14,14 +14,31 @@
     <nav class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#about" class="navigation__link">ABOUT</a>
+          <router-link
+            to="/"
+            v-slot="{ href, route, navigate, isActive, isExactActive }"
+          >
+            <a
+              :active="isActive"
+              :href="href"
+              @click="navigate"
+              class="navigation__link"
+              >HOME</a
+            >
+          </router-link>
         </li>
         <li class="navigation__item">
           <router-link
             to="/projects"
             v-slot="{ href, route, navigate, isActive, isExactActive }"
           >
-            <a :active="isActive" :href="href" @click="navigate" class="navigation__link">PROJECTS</a>
+            <a
+              :active="isActive"
+              :href="href"
+              @click="navigate"
+              class="navigation__link"
+              >PROJECTS</a
+            >
           </router-link>
         </li>
         <li class="navigation__item">
@@ -34,5 +51,3 @@
     </nav>
   </div>
 </template>
-
-<script></script>
