@@ -30,7 +30,7 @@
         <li class="navigation__item">
           <router-link
             to="/projects"
-            v-slot="{ href, route, navigate, isActive, isExactActive }"
+            v-slot="{ href, route, navigate, isActive }"
           >
             <a
               :active="isActive"

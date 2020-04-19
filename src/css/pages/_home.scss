@@ -5,7 +5,7 @@
   width: 100%;
 
   @include respond(tab-port) {
-    padding: 20rem 7rem 18rem 7rem;
+    padding: 20rem $margin-left-right-sm 18rem $margin-left-right-sm
   }
 }
 
@@ -47,12 +47,8 @@
   background-color: $color-grey-light-1;
   padding: 5rem $margin-left-right 5rem $margin-left-right;
 
-  @include respond(tab-land) {
-    padding: 40rem 5rem 15rem 5rem;
-  }
-
-  @include respond(phone) {
-    padding: 30rem 3rem 10rem 3rem;
+  @include respond(tab-port) {
+    padding: 20rem $margin-left-right-sm 5rem $margin-left-right-sm
   }
 }
 

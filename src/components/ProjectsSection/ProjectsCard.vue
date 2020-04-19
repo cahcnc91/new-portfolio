@@ -17,8 +17,18 @@
       <div class="card__side card__side--back card__side--back-1">
         <div class="card__cta">
           <p class="card__name">{{ item.title }}</p>
-          <a href="#popup-thinkempire" class="button button--transparent-green"
-            >LEARN MORE</a>
+          <router-link
+            to="/thinkempire"
+            v-slot="{ href, route, navigate, isActive, isExactActive }"
+          >
+            <a
+              :active="isActive"
+              :isExactActive="isExactActive"
+              :href="href"
+              @click="navigate"
+              class="button button--transparent-green"
+              >LEARN MORE</a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -26,10 +36,9 @@
 </template>
 
 <script>
-
 export default {
   props: {
-    item: Object
+    item: Object,
   },
 };
 </script>
