@@ -19,9 +19,9 @@ export default new Router({
       path: '/projects',
       name: 'projects',
       component: Projects,
-      // children: [
-      //   { path: '/projects/resovere', component: Resovere}
-      // ]
+      children: [
+        { path: '/projects/resovere', component: Resovere}
+      ]
     },
     {
       path: '/thinkempire',

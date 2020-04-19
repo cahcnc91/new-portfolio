@@ -35,7 +35,11 @@
     );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    // transform: scale(80);
+
+      // FUNCTIONALITY
+  &--open {
+    transform: scale(80);
+  }
 
     @include respond(tab-port) {
       top: 4.5rem;
@@ -45,12 +49,18 @@
   &__nav {
     height: 100vh;
     position: fixed;
-    top: 0;
-    left: 0;
+    top:0;
+    left: -300px;
     z-index: 1500;
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &--open {
+      opacity: 1;
+      width: 100%;
+      left: 0;
+    }
   }
   &__item {
     margin: 1rem;
@@ -89,14 +99,7 @@
       transform: translateX(1rem);
     }
   }
-  // FUNCTIONALITY
-  &__checkbox:checked ~ &__background {
-    transform: scale(80);
-  }
-  &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    width: 100%;
-  }
+
   // ICON
   &__icon {
     position: relative;

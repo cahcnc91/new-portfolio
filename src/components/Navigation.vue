@@ -6,14 +6,25 @@
       class="navigation__checkbox"
       id="navi-toggle"
     />
-    <label for="navi-toggle" class="navigation__button">
+    <div
+      v-if="!isOpen"
+      for="navi-toggle"
+      class="navigation__button"
+      v-on:click="isOpen = !isOpen"
+    >
       <span class="navigation__icon">&nbsp;</span>
-    </label>
-    <div class="navigation__background">&nbsp;</div>
+    </div>
+    <div
+      class="navigation__background"
+      v-on:click="isOpen = !isOpen"
+      v-bind:class="{ 'navigation__background--open': isOpen }"
+    >
+      &nbsp;
+    </div>
 
-    <nav class="navigation__nav">
+    <nav class="navigation__nav" v-bind:class="{ 'navigation__nav--open': isOpen }">
       <ul class="navigation__list">
-        <li class="navigation__item">
+        <li class="navigation__item" v-on:click="isOpen = !isOpen">
           <router-link
             to="/"
             v-slot="{ href, route, navigate, isActive, isExactActive }"
@@ -27,7 +38,7 @@
             >
           </router-link>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item" v-on:click="isOpen = !isOpen">
           <router-link
             to="/projects"
             v-slot="{ href, route, navigate, isActive }"
@@ -51,3 +62,13 @@
     </nav>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+};
+</script>

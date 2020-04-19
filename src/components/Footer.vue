@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import IconGradient from "../IconGradient.vue";
+import IconGradient from "./IconGradient.vue";
 
 export default {
   components: {
