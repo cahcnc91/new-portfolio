@@ -19,17 +19,20 @@ export default {
         {
           title: "THINK EMPIRE",
           tools: ["Nodejs", "MySQL", "React / Redux", "GraphQL", "GCP"],
-          class: "card__picture card__picture--1"
+          class: "card__picture card__picture--1",
+          link: "/thinkempire"
         },
         {
           title: "RESOVERE",
           tools: ["Responsive design","Wordpress", "VUE", "SCSS", "Webpack"],
-          class: "card__picture card__picture--2"
+          class: "card__picture card__picture--2",
+          link: "/resovere"
         },
         {
           title: 'MY FUN PROJECTS',
           tools: ["React", "Vue", "Webpack"],
-          class: "card__picture card__picture--3"
+          class: "card__picture card__picture--3",
+          link: "/mystyff"
         }
       ],
     };

@@ -2,7 +2,6 @@
   <div>
     <Navigation></Navigation>
     <router-view></router-view>
-    <router-view name="projects" />
     <Footer></Footer>
   </div>
 </template>

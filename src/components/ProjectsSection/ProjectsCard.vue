@@ -18,12 +18,10 @@
         <div class="card__cta">
           <p class="card__name">{{ item.title }}</p>
           <router-link
-            to="/thinkempire"
-            v-slot="{ href, route, navigate, isActive, isExactActive }"
+            :to="item.link"
+            v-slot="{ href, route, navigate}"
           >
             <a
-              :active="isActive"
-              :isExactActive="isExactActive"
               :href="href"
               @click="navigate"
               class="button button--transparent-green"
