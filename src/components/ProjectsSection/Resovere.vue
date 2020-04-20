@@ -12,13 +12,12 @@
         <p class="paragraph u-margin-top-s">
          Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites, created custom WordPress templates, ACFs, animations, setup CMS for clients and plugins.
         </p>
-        <p class="paragraph"><b>Technologies:</b> HTML, CSS, SCSS, Wepback, Wordpress, Vue and Tailwind.</p>
+        <p class="paragraph"><b>Technologies:</b> HTML, CSS, SCSS, Wepback, Wordpress, Vue, Pantheon, Tailwind and Git</p>
       </div>
       <div class="col-1-of-2">
         <img src="../../images/resovere.png" class="single-project__img"/>
       </div>
-    <div>
-  </div>
+    </div>
   </section>
   </fragment>
 </template>

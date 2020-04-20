@@ -84,6 +84,9 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
       template: "./src/index.html",
+      inject: true,
+      title: "camilacoder Full-Stack Developer | JavaScript",
+      favicon: "./src/images/logo-black.png"
     }),
     new webpack.DefinePlugin({
       "process.env": JSON.stringify(dotenv.parsed)
