@@ -1,5 +1,7 @@
 const express = require("express");
-const server = express()
+const server = express();
+var history = require('connect-history-api-fallback');
+
 // import path from "path"
 
 const isProd = process.env.NODE_ENV === "production";
@@ -22,6 +24,8 @@ const webpackHotMiddlware = require("webpack-hot-middleware")(
 
 server.use(webpackDevMiddleware)
 server.use(webpackHotMiddlware)
+
+  
 }
 
 // const staticMiddleware = express.static("dist")
@@ -30,6 +34,12 @@ const expressStaticGzip = require('express-static-gzip')
 server.use(expressStaticGzip("dist"))
 
 const PORT = process.env.PORT || 8080
+
+server.use(history({
+  disableDotRule: true,
+  verbose: true
+}));
+
 server.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
 })

@@ -2,8 +2,7 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="header__logo-box">
-        <h1 class="header__logo-name">Camila</h1>
-        <h1 class="header__logo-name">Coder</h1>
+        <h1 class="header__logo-name">Camila Coder</h1>
       </div>
 
       <div class="header__text-box">

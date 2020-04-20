@@ -9,17 +9,19 @@
   width: 100%;
   margin: 0;
 
-  @include respond(tab-port) {
-    width: 50%;
-    padding: 2rem;
-  }
-
   &__column {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       display:flex;
       justify-content: center;
-      width: 50%;
     }
+  }
+
+  // @include respond(tab-land) {
+  //   width: 60%;
+  // }
+
+  @include respond(tab-port) {
+    width: 70%;
   }
 
   @include respond(phone) {
@@ -48,9 +50,9 @@
     display: flex;
     margin: 0 auto;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       justify-content: space-between;
-      width: 50%;
+      // width: 50%;
     }
 
     @include respond(phone) {
@@ -64,7 +66,7 @@
       display: flex;
       margin: 0 auto;
 
-      @include respond(tab-port) {
+      @include respond(tab-land) {
         justify-content: space-between;
         width: 20%;
       }

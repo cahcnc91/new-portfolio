@@ -1,18 +1,12 @@
 <template>
   <div class="navigation">
-    <input
-      type="checkbox"
-      name="check-test"
-      class="navigation__checkbox"
-      id="navi-toggle"
-    />
     <div
-      v-if="!isOpen"
       for="navi-toggle"
       class="navigation__button"
+      v-bind:class="{ 'navigation__button--open': isOpen }"
       v-on:click="isOpen = !isOpen"
     >
-      <span class="navigation__icon">&nbsp;</span>
+      <span class="navigation__icon" v-bind:class="{ 'navigation__icon--open': isOpen }">&nbsp;</span>
     </div>
     <div
       class="navigation__background"
@@ -40,7 +34,7 @@
         </li>
         <li class="navigation__item" v-on:click="isOpen = !isOpen">
           <router-link
-            to="/projects"
+            to="/work"
             v-slot="{ href, route, navigate, isActive }"
           >
             <a
@@ -48,7 +42,7 @@
               :href="href"
               @click="navigate"
               class="navigation__link"
-              >PROJECTS</a
+              >WORK</a
             >
           </router-link>
         </li>

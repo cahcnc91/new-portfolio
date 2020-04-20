@@ -1,0 +1,30 @@
+.arrow {
+    @include respond(tab-port) {
+        display: none;
+     }
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #E8E8E8;
+
+  &__left {
+    left: 0;
+    border-radius: 0 100px 100px 0;
+    justify-content: flex-start;
+  }
+
+  &__right {
+    right: 0;
+    border-radius: 100px 0 0 100px;
+    justify-content: flex-end;
+  }
+  
+
+  &:hover {
+    background-color: $color-medium-grey;
+  }
+}

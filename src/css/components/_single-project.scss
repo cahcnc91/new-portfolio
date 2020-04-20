@@ -1,0 +1,25 @@
+.single-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+      }
+
+    &__divider {
+        background-color: $color-grey-light-2;
+        height: 2px;
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+
+        @include respond(tab-land) {
+            padding-top: 2rem;
+        }
+        
+    }
+}

@@ -1,74 +1,100 @@
-.section-about {
-  background-color: $color-grey-light-1;
-  padding: 25rem $margin-left-right 10rem $margin-left-right;
-  margin-top: -15vh;
+.section-about, .section-projects, .section-nav, .section-project {
+  padding-left: $margin-left-right;
+  padding-right: $margin-left-right;
   width: 100%;
 
+  @include respond(big-desktop) {
+    padding-left: $margin-left-right-lg;
+    padding-right: $margin-left-right-lg;
+  }
+
   @include respond(tab-port) {
-    padding: 20rem $margin-left-right-sm 18rem $margin-left-right-sm
+    padding-left: $margin-left-right-sm;
+    padding-right: $margin-left-right-sm;
+  }
+
+  @include respond(phone) {
+    padding-left: $margin-left-right-xs;
+    padding-right: $margin-left-right-xs;
   }
 }
 
-.section-stripe {
-  top: 15rem;
-  height: 65rem;
-  padding: 20rem 0;
-  background-image: linear-gradient(
-      rgba($color-black, 0.8),
-      rgba($color-black, 0.8)
-    ),
-    url("images/computer.jpg");
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-  -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
-  clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
-
-  @include respond(tab-port) {
-    display: none;
-  }
-}
-
-.section-features {
-  height: 60vh;
-  padding: 20rem 0;
-
-  background-image: linear-gradient(
-      rgba($color-black, 0.8),
-      rgba($color-black, 0.8)
-    ),
-    url("images/computer.jpg");
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
+.section-about, .section-projects, .section-project {
+  background-color: $color-grey-light-1;
 }
 
 .section-projects {
-  background-color: $color-grey-light-1;
-  padding: 5rem $margin-left-right 5rem $margin-left-right;
-
-  @include respond(tab-port) {
-    padding: 20rem $margin-left-right-sm 5rem $margin-left-right-sm
-  }
+  padding-top: 3rem;
+  padding-bottom: 10rem;
 }
 
-.section-stripe2 {
-  position: relative;
-  padding: 10rem 0;
+.section-about {
+  margin-top: -15vh;
+  padding-top: 25rem;
+  padding-bottom: 10rem;}
+
+.footer {
+  background-color: $color-grey-dark-2;
+  padding: 3rem 0;
+  font-size: 1.4rem;
 }
 
-.section-contact {
-  padding: 12rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-lighter,
-    $color-primary-darker
-  );
-
-  @include respond(tab-port) {
-    padding: 8rem 0;
-  }
+.section-project {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
+
+// .section-stripe {
+//   top: 15rem;
+//   height: 65rem;
+//   padding: 20rem 0;
+//   background-image: linear-gradient(
+//       rgba($color-black, 0.8),
+//       rgba($color-black, 0.8)
+//     ),
+//     url("images/computer.jpg");
+//   background-size: cover;
+//   position: relative;
+//   background-attachment: fixed;
+//   -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
+//   clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
+
+//   @include respond(tab-port) {
+//     display: none;
+//   }
+// }
+
+// .section-features {
+//   height: 60vh;
+//   padding: 20rem 0;
+
+//   background-image: linear-gradient(
+//       rgba($color-black, 0.8),
+//       rgba($color-black, 0.8)
+//     ),
+//     url("images/computer.jpg");
+//   background-size: cover;
+//   position: relative;
+//   background-attachment: fixed;
+// }
+
+// .section-stripe2 {
+//   position: relative;
+//   padding: 10rem 0;
+// }
+
+// .section-contact {
+//   padding: 12rem 0;
+//   background-image: linear-gradient(
+//     to right bottom,
+//     $color-primary-lighter,
+//     $color-primary-darker
+//   );
+
+//   @include respond(tab-port) {
+//     padding: 8rem 0;
+//   }
+// }
 
 .section-code-samples {
   padding: 8rem 0;
@@ -119,10 +145,4 @@
       width: 100%;
     }
   }
-}
-
-.footer {
-  background-color: $color-grey-dark-2;
-  padding: 3rem 0;
-  font-size: 1.4rem;
 }

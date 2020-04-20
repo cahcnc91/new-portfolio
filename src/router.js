@@ -4,11 +4,12 @@ import Home from "./layout/Home.vue";
 import Projects from "./layout/Projects.vue";
 import Thinkempire from "./components/ProjectsSection/ThinkEmpire.vue";
 import Resovere from "./components/ProjectsSection/Resovere.vue";
+import NotFound from './components/NotFound.vue'
 
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  // mode: "history",
   routes: [
     {
       path: "/",
@@ -16,7 +17,7 @@ export default new Router({
       component: Home,
     },
     {
-      path: "/projects",
+      path: "/work",
       component: Projects,
     },
     {
@@ -24,5 +25,6 @@ export default new Router({
       component: Thinkempire,
     },
     { path: "/resovere", component: Resovere },
+    { path: '*', component: NotFound }
   ],
 });
