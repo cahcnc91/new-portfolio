@@ -4,7 +4,8 @@ import Home from "./layout/Home.vue";
 import Projects from "./layout/Projects.vue";
 import Thinkempire from "./components/ProjectsSection/ThinkEmpire.vue";
 import Resovere from "./components/ProjectsSection/Resovere.vue";
-import NotFound from './components/NotFound.vue'
+import NotFound from "./components/NotFound.vue";
+import Autocomplete from "./components/ProjectsSection/Autocomplete.vue";
 
 Vue.use(Router);
 
@@ -25,6 +26,7 @@ export default new Router({
       component: Thinkempire,
     },
     { path: "/resovere", component: Resovere },
-    { path: '*', component: NotFound }
+    { path: "/autocomplete", component: Autocomplete },
+    { path: "*", component: NotFound },
   ],
 });

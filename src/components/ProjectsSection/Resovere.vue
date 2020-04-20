@@ -10,7 +10,7 @@
         <div class="single-project__divider"></div>
         <a href="" class="paragraph">Resovere</a>
         <p class="paragraph u-margin-top-s">
-         Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites, created custom WordPress templates, ACFs, animations, setup CMS for clients and plugins.
+         Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites, created custom WordPress templates, ACFs, animations, plugins and setup CMS for clients.
         </p>
         <p class="paragraph"><b>Technologies:</b> HTML, CSS, SCSS, Wepback, Wordpress, Vue, Pantheon, Tailwind and Git</p>
       </div>

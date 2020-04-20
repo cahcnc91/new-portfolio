@@ -32,9 +32,9 @@ export default {
         },
         {
           title: 'MY FUN PROJECTS',
-          tools: ["React", "Vue", "Webpack"],
+          tools: ["React", "Vue", "Webpack", "npm"],
           class: "card__picture card__picture--3",
-          link: "/mystyff"
+          link: "/autocomplete"
         }
       ],
     };
