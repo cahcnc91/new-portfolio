@@ -27,21 +27,15 @@
         :title="other.title"
       ></AboutCard>
     </div>
-    <p class="about__text--sm u-margin-top u-margin-bottom">
-      Interested in working together?<br />Contact me:
-    </p>
-    <ContactInfo></ContactInfo>
   </section>
 </template>
 
 <script>
 import AboutCard from "./AboutCard.vue";
-import ContactInfo from "./ContactInfo.vue";
 
 export default {
   components: {
     AboutCard,
-    ContactInfo,
   },
   data() {
     return {

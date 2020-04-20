@@ -1,4 +1,8 @@
-.section-about, .section-projects, .section-nav, .section-project {
+.section-about,
+.section-projects,
+.section-nav,
+.section-project,
+.section-contact {
   padding-left: $margin-left-right;
   padding-right: $margin-left-right;
   width: 100%;
@@ -19,7 +23,10 @@
   }
 }
 
-.section-about, .section-projects, .section-project {
+.section-about,
+.section-projects,
+.section-project,
+.section-contact {
   background-color: $color-grey-light-1;
 }
 
@@ -31,7 +38,11 @@
 .section-about {
   margin-top: -15vh;
   padding-top: 25rem;
-  padding-bottom: 10rem;}
+  padding-bottom: 10rem;
+}
+
+.section-contact {
+}
 
 .footer {
   background-color: $color-grey-dark-2;
@@ -81,19 +92,6 @@
 // .section-stripe2 {
 //   position: relative;
 //   padding: 10rem 0;
-// }
-
-// .section-contact {
-//   padding: 12rem 0;
-//   background-image: linear-gradient(
-//     to right bottom,
-//     $color-primary-lighter,
-//     $color-primary-darker
-//   );
-
-//   @include respond(tab-port) {
-//     padding: 8rem 0;
-//   }
 // }
 
 .section-code-samples {

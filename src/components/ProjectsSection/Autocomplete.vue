@@ -17,7 +17,7 @@ export default {
                 link: "https://www.npmjs.com/package/cahcnc91-autocomplete",
                 iframe: "https://codesandbox.io/embed/using-autocomplete-package-25tqk?autoresize=1&fontsize=14&hidenavigation=1&theme=dark",
                 arrowLeft: "/resovere",
-                arrowRight: "/scroll-and-click"
+                arrowRight: "/clickscroll"
             }
         }
     }

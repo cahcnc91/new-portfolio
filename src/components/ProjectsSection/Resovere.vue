@@ -1,37 +1,28 @@
 <template>
   <fragment>
-  <Navbar></Navbar>
-  <section class="section-project">
-    <ArrowRight link="/mystuff"></ArrowRight>
-    <ArrowLeft link="/thinkempire"></ArrowLeft>
-    <div class="row single-project">
-      <div class="col-1-of-2">
-        <h2>Front End Contractor</h2>
-        <div class="single-project__divider"></div>
-        <a href="" class="paragraph">Resovere</a>
-        <p class="paragraph u-margin-top-s">
-         Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites, created custom WordPress templates, ACFs, animations, plugins and setup CMS for clients.
-        </p>
-        <p class="paragraph"><b>Technologies:</b> HTML, CSS, SCSS, Wepback, Wordpress, Vue, Pantheon, Tailwind and Git</p>
-      </div>
-      <div class="col-1-of-2">
-        <img src="../../images/resovere.png" class="single-project__img"/>
-      </div>
-    </div>
-  </section>
+    <ProjectBody :project="project"></ProjectBody>
   </fragment>
 </template>
 
 <script>
-import Navbar from '../Navbar.vue';
-import ArrowRight from '../ArrowRight.vue';
-import ArrowLeft from '../ArrowLeft.vue';
+import ProjectBody from './ProjectBody.vue';
 
 export default {
     components: {
-        Navbar,
-        ArrowRight,
-        ArrowLeft
+        ProjectBody
+    },
+    data() {
+      return {
+        project: {
+          title: "Front-end Contractor",
+          subtitle: "Resovere",
+          body: "Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites, created custom WordPress, templates, ACFs, animations, plugins and setup CMS for clients.",
+          technologies: "HTML, CSS, CSS preprocessors, Vue, Javasvript, PHP, Tailwind, Webpack, CMS(Wordpress), Pantheon and Git",
+          img: "../../images/resovere.png",
+          arrowLeft: "./thinkempire",
+          arrowRight: "./autocomplete"
+        }
+      }
     }
 }
 </script>

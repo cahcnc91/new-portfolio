@@ -87,4 +87,11 @@
       }
     }
   }
+
+  &__margin {
+    margin: 0 2rem;
+    @include respond(phone) {
+      margin: 2rem 0;
+    }
+  }
 }

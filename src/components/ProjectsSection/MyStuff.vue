@@ -19,7 +19,7 @@
         <div class="col-3-of-4 single-project__img">
             <iframe
                 :src="project.iframe"
-                style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"
+                style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
                 title="using-autocomplete-package"
                 allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
                 sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
