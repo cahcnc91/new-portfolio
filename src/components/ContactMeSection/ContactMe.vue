@@ -8,6 +8,27 @@
         </p>
       </div>
       <ContactInfo></ContactInfo>
+      <div class="row flex justify-center">
+        <div class="u-margin-bottom"></div>
+        <div class="figure-shape__image--mobile-div">
+          <img
+            src="../../images/camilaluna.png"
+            alt="camila coder web developer"
+            class="figure-shape__image--mobile-img"
+          />
+        </div>
+
+        <figure class="figure-shape">
+          <img
+            src="../../images/camilaluna.png"
+            alt="camila coder web developer"
+            class="figure-shape__image"
+          />
+          <figcaption class="figure-shape__caption">
+            Luna says hello!
+          </figcaption>
+        </figure>
+      </div>
     </section>
   </fragment>
 </template>

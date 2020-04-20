@@ -1,4 +1,10 @@
 .footer {
+  @include respond(big-desktop) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
   &__list {
     display: flex;
     align-items: center;

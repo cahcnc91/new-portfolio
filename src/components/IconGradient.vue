@@ -6,7 +6,7 @@
         <stop stop-color="#28b485" offset="1" />
       </radialGradient>
     </svg>
-    <font-awesome-icon :icon="iconName" :class="classes" />
+    <font-awesome-icon :icon="iconName" :class="classes" size="lg"/>
   </div>
 </template>
 

@@ -3,6 +3,7 @@
   <Navbar></Navbar>
   <section class="section-project">
     <ArrowLeft link="./clickscroll"></ArrowLeft>
+    <ArrowRight link="./see-more"></ArrowRight>
     <div class="row single-project">
       <div class="col-1-of-2">
         <h2>This Portfolio</h2>

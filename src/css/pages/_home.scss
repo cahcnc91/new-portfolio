@@ -23,16 +23,13 @@
   }
 }
 
-.section-about,
-.section-projects,
-.section-project,
-.section-contact {
-  background-color: $color-grey-light-1;
-}
-
 .section-projects {
   padding-top: 3rem;
   padding-bottom: 10rem;
+}
+
+.section-project {
+  padding-bottom: 6rem;
 }
 
 .section-about {
@@ -42,6 +39,7 @@
 }
 
 .section-contact {
+  padding-bottom: 6rem;
 }
 
 .footer {
@@ -55,92 +53,9 @@
   padding-bottom: 10rem;
 }
 
-// .section-stripe {
-//   top: 15rem;
-//   height: 65rem;
-//   padding: 20rem 0;
-//   background-image: linear-gradient(
-//       rgba($color-black, 0.8),
-//       rgba($color-black, 0.8)
-//     ),
-//     url("images/computer.jpg");
-//   background-size: cover;
-//   position: relative;
-//   background-attachment: fixed;
-//   -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
-//   clip-path: polygon(0 11%, 100% 0%, 100% 37%, 0 48%);
-
-//   @include respond(tab-port) {
-//     display: none;
-//   }
-// }
-
-// .section-features {
-//   height: 60vh;
-//   padding: 20rem 0;
-
-//   background-image: linear-gradient(
-//       rgba($color-black, 0.8),
-//       rgba($color-black, 0.8)
-//     ),
-//     url("images/computer.jpg");
-//   background-size: cover;
-//   position: relative;
-//   background-attachment: fixed;
-// }
-
-// .section-stripe2 {
-//   position: relative;
-//   padding: 10rem 0;
-// }
-
 .section-code-samples {
   padding: 8rem 0;
   @include respond(tab-port) {
     padding: 4rem 0;
-  }
-}
-
-.iframe {
-  padding: 0 8rem;
-  @include respond(tab-port) {
-    padding: 0;
-  }
-}
-
-.replit-logo:hover {
-  color: $color-primary;
-}
-
-.contact {
-  background-image: linear-gradient(
-      105deg,
-      rgba($color-white, 0.7) 0%,
-      rgba($color-white, 0.9) 50%,
-      transparent 50%
-    ),
-    url(images/developers.jpg);
-  background-size: 100%;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
-  height: 50rem;
-
-  @include respond(tab-port) {
-    background-image: linear-gradient(
-        105deg,
-        rgba($color-white, 0.8) 80%,
-        rgba($color-white, 0.5) 100%,
-        transparent 50%
-      ),
-      url(images/developers.jpg);
-  }
-
-  &__form {
-    width: 50%;
-    padding: 1.5rem 5rem;
-
-    @include respond(tab-port) {
-      width: 100%;
-    }
   }
 }

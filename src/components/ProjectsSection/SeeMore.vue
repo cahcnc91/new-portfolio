@@ -1,42 +1,36 @@
 <template>
-  <footer class="footer">
-    <div class="footer__logo-box"></div>
-    <div class="footer__navigation">
-      <ul class="footer__list">
-        <li class="footer__item">
+  <div>
+    <Navbar></Navbar>
+    <section class="section-projects">
+      <p class="about__text--sm u-margin-bottom">
+        Do you want to see more projects and code samples of mine? <br />Visit:
+      </p>
+      <ul>
+        <li class="u-margin-bottom-small">
           <a
             href="https://github.com/cahcnc91"
             target="_blank"
             rel="noopener noreferrer"
+            class="about__text-icon"
           >
             <IconGradient
               :iconName="['fab', 'github']"
-              classes="social-links__icon"
+              classes="about__icon about__icon--lg"
             ></IconGradient>
+            <p class="about__text--sm u-margin-left">GitHub</p>
           </a>
         </li>
-        <li class="footer__item">
-          <a
-            href="https://www.linkedin.com/in/cahcnc91/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconGradient
-              :iconName="['fab', 'linkedin-in']"
-              classes="social-links__icon"
-            ></IconGradient
-          ></a>
-        </li>
-        <li class="footer__item">
+        <li>
           <a
             href="https://codesandbox.io/u/cahcnc91/sandboxes"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center social-links__icon"
+            class="about__text-icon"
           >
             <svg
               height="4rem"
               width="4rem"
+              style="margin-left: 3px"
               viewBox="0 0 256 296"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,22 +44,26 @@
                 ></path>
               </g>
             </svg>
+            <p class="about__text--sm u-margin-left">CodeSandBox</p>
           </a>
         </li>
       </ul>
-    </div>
-    <div class="row footer__copyright">
-      <p>Copyright &copy; 2020 by Camila Coder</p>
-      <p>All rights reserved.</p>
-    </div>
-  </footer>
+
+      <p class="about__text--sm u-margin-bottom u-margin-top">
+        Or contact me and I'm happy to show more.
+      </p>
+      <router-link to="/contact-me"><button class="button button--green button--size1">CONTACT ME</button></router-link>
+    </section>
+  </div>
 </template>
 
 <script>
-import IconGradient from "./IconGradient.vue";
+import Navbar from "../Navbar.vue";
+import IconGradient from "../IconGradient.vue";
 
 export default {
   components: {
+    Navbar,
     IconGradient,
   },
 };

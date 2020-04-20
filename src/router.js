@@ -9,6 +9,7 @@ import Autocomplete from "./components/ProjectsSection/Autocomplete.vue";
 import ClickAndScroll from "./components/ProjectsSection/ClickAndScroll.vue";
 import Portfolio from './components/ProjectsSection/Portfolio.vue';
 import ContactMe from './components/ContactMeSection/ContactMe.vue';
+import SeeMore from './components/ProjectsSection/SeeMore.vue';
 
 Vue.use(Router);
 
@@ -33,6 +34,7 @@ export default new Router({
     { path: "/clickscroll", component: ClickAndScroll },
     { path: "/portfolio", component: Portfolio},
     { path: "/contact-me", component: ContactMe},
+    {path: "/see-more", component: SeeMore},
     { path: "*", component: NotFound },
   ],
 });

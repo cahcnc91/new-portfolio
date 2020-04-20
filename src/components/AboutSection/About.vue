@@ -4,8 +4,6 @@
       I'm a full-stack developer based in NYC. I love coding, I'm extremely
       social and I'm obsessed with being productive.
     </p>
-
-    <p></p>
     <p class="about__text--sm u-margin-top u-margin-bottom">
       I'm experienced with a range of different technologies<br />
       Some of them are:
