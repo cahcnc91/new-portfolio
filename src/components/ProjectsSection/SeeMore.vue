@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar></Navbar>
+     <ArrowLeft link="/portfolio"></ArrowLeft>
     <section class="section-projects">
       <p class="about__text--sm u-margin-bottom">
         Do you want to see more projects and code samples of mine? <br />Visit:
@@ -60,11 +61,13 @@
 <script>
 import Navbar from "../Navbar.vue";
 import IconGradient from "../IconGradient.vue";
+import ArrowLeft from '../ArrowLeft.vue';
 
 export default {
   components: {
     Navbar,
     IconGradient,
+    ArrowLeft
   },
 };
 </script>
