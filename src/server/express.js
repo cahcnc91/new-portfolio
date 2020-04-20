@@ -1,6 +1,6 @@
 const express = require("express");
 const server = express();
-var history = require('connect-history-api-fallback');
+// var history = require('connect-history-api-fallback');
 
 // import path from "path"
 
@@ -35,10 +35,10 @@ server.use(expressStaticGzip("dist"))
 
 const PORT = process.env.PORT || 8080
 
-server.use(history({
-  disableDotRule: true,
-  verbose: true
-}));
+// server.use(history({
+//   disableDotRule: true,
+//   verbose: true
+// }));
 
 server.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
