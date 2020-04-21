@@ -1,7 +1,5 @@
 <template>
   <section class="section-projects" id="projects">
-  <div class="u-center-text u-margin-bottom-small"><h2 class="heading-secondary">WORK</h2></div>
-
     <div class="row">
       <ProjectsCard v-for="item in projects" :key="projects.title" :item="item"></ProjectsCard>
     </div>
