@@ -1,6 +1,6 @@
 <template>
-  <div class="row">
-    <nav class="section-nav navbar">
+  <nav class="section-nav navbar">
+    <div class="row">
       <router-link to="/" v-slot="{ href, route, navigate, isActive }">
         <a
           :active="isActive"
@@ -10,6 +10,6 @@
           >Camila Coder</a
         >
       </router-link>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>
