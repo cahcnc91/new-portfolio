@@ -19,7 +19,7 @@
       </div>
     </div>
   </section>
-  </fragment>
+  </div>
 </template>
 
 <script>

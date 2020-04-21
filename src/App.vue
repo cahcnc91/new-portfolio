@@ -51,7 +51,7 @@ export default {
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 1s;
+  transition-duration: .8s;
   transition-property: height, opacity;
   transition-timing-function: ease;
   overflow: hidden;
