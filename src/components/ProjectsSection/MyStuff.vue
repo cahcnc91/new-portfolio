@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
   <Navbar></Navbar>
   <section class="section-project">
     <ArrowLeft :link="project.arrowLeft"></ArrowLeft>
@@ -28,7 +28,7 @@
       </div>
     </section>
   </section>
-  </fragment>
+  </div>
 </template>
 
 <script>

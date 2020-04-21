@@ -1,8 +1,8 @@
 <template>
-  <fragment>
+  <div>
     <Hero @click="handleClick"></Hero>
     <About></About>
-  </fragment>
+  </div>
 </template>
 
 <script>

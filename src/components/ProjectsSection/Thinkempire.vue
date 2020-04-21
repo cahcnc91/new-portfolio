@@ -1,7 +1,5 @@
 <template>
-  <fragment>
     <ProjectBody :project="project"></ProjectBody>
-  </fragment>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
     <Navbar></Navbar>
     <section class="section-contact">
       <div class="row">
@@ -30,7 +30,7 @@
         </figure>
       </div>
     </section>
-  </fragment>
+  </div>
 </template>
 
 <script>

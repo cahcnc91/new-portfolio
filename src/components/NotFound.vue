@@ -1,11 +1,11 @@
 <template>
-  <fragment>
+  <div>
     <Navbar></Navbar>
     <section class="section-projects flex flex-col items-center">
       <p class="paragraph">OPS! 404 NOT FOUND</p>
       <img src="https://i.gifer.com/6uk.gif"/>
     </section>
-  </fragment>
+  </div>
 </template>
 
 <script>

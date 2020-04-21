@@ -1,8 +1,8 @@
 <template>
-  <fragment>
+  <div>
     <Navbar></Navbar>
     <Cards></Cards>
-  </fragment>
+  </div>
 </template>
 
 <script>
