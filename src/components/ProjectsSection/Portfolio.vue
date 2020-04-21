@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
   <Navbar></Navbar>
   <section class="section-project">
     <ArrowLeft link="./clickscroll"></ArrowLeft>

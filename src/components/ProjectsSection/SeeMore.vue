@@ -1,10 +1,11 @@
 <template>
   <div>
     <Navbar></Navbar>
-     <ArrowLeft link="/portfolio"></ArrowLeft>
-    <section class="section-projects">
+    <ArrowLeft link="/portfolio"></ArrowLeft>
+    <section class="section-see-more">
       <p class="about__text--sm u-margin-bottom">
-        Do you want to see more projects and code samples of mine? <br />Visit:
+        Do you want to see more projects and code samples of mine?
+        <br />Visit:
       </p>
       <ul>
         <li class="u-margin-bottom-small">
@@ -53,7 +54,11 @@
       <p class="about__text--sm u-margin-bottom u-margin-top">
         Or contact me and I'm happy to show more.
       </p>
-      <router-link to="/contact-me"><button class="button button--green button--size1">CONTACT ME</button></router-link>
+      <router-link to="/contact-me"
+        ><button class="button button--green button--size1">
+          CONTACT ME
+        </button></router-link
+      >
     </section>
   </div>
 </template>
@@ -61,13 +66,13 @@
 <script>
 import Navbar from "../Navbar.vue";
 import IconGradient from "../IconGradient.vue";
-import ArrowLeft from '../ArrowLeft.vue';
+import ArrowLeft from "../ArrowLeft.vue";
 
 export default {
   components: {
     Navbar,
     IconGradient,
-    ArrowLeft
+    ArrowLeft,
   },
 };
 </script>

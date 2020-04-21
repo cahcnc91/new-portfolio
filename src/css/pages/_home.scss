@@ -2,6 +2,7 @@
 .section-projects,
 .section-nav,
 .section-project,
+.section-see-more,
 .section-contact {
   padding-left: $margin-left-right;
   padding-right: $margin-left-right;
@@ -30,6 +31,11 @@
 
 .section-project {
   padding-bottom: 6rem;
+}
+
+.section-see-more {
+  padding-bottom: 6rem;
+  padding-top: 6rem
 }
 
 .section-about {
