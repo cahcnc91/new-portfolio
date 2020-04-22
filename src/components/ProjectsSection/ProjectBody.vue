@@ -14,6 +14,9 @@
           <a href="" class="paragraph">{{ project.subtitle }}</a>
           <p class="paragraph u-margin-top-s">
             {{ project.body }}
+            <span v-if="project.link"><a :href="project.link" target="__blank" class="single-project__link">{{ project.linkName }}</a></span>
+            <span v-if="project.multipleLinks"><a :href="project.link1" target="__blank" class="single-project__link">See Know Your Rivals</a>, <a :href="project.link2" target="__blank" class="single-project__link">see Fieldedge</a>, <a :href="project.link3" target="__blank" class="single-project__link">see JWB Pinellas</a></span>
+          .
           </p>
           <p class="paragraph">
             <b>Technologies:</b> {{ project.technologies }}

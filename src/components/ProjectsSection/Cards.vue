@@ -18,13 +18,13 @@ export default {
       projects: [
         {
           title: "THINK EMPIRE",
-          tools: ["Nodejs", "MySQL", "React / Redux", "GraphQL", "GCP"],
+          tools: ["Nodejs / Express", "MySQL / GraphQL", "React / Redux", "GCP"],
           class: "card__picture card__picture--1",
           link: "/thinkempire"
         },
         {
           title: "RESOVERE",
-          tools: ["Responsive design","Wordpress", "VUE", "SCSS", "Webpack"],
+          tools: ["Wordpress", "VUE", "SCSS", "Webpack"],
           class: "card__picture card__picture--2",
           link: "/resovere"
         },

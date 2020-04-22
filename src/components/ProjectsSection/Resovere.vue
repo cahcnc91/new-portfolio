@@ -10,15 +10,19 @@ export default {
   data() {
     return {
       project: {
-        title: "Front-end Contractor",
+        title: "Front-End Contractor",
         subtitle: "Resovere",
         body:
-          "Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites, created custom WordPress, templates, ACFs, animations, plugins and setup CMS for clients.",
+          "Contractor for a Creative Digital Marketing Agency, where I developed fully responsive websites from concept through deployment, created custom WordPress, templates, ACFs, animations, plugins and setup CMS for clients.",
         technologies:
-          "HTML, CSS, CSS preprocessors, Vue, Javasvript, PHP, Tailwind, Webpack, CMS(Wordpress), Pantheon and Git",
+          "HTML, CSS, CSS preprocessors, Vue, Javasvript, PHP, Tailwind, Webpack, CMS(Wordpress), Pantheon and Git.",
         img: "../../images/resovere.png",
         arrowLeft: "./thinkempire",
         arrowRight: "./autocomplete",
+        multipleLinks: true,
+        link1: "https://knowyourrivals.com/",
+        link2: "https://fieldedge.com/",
+        link3: "https://www.jwbpinellas.org/"
       },
     };
   },
