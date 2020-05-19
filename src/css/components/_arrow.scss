@@ -2,14 +2,14 @@
     @include respond(tab-port) {
         display: none;
      }
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   height: 100px;
   width: 50px;
   display: flex;
   align-items: center;
-  background-color: #E8E8E8;
+  background-color: $color-medium-grey;
 
   &__left {
     left: 0;
@@ -25,6 +25,6 @@
   
 
   &:hover {
-    background-color: $color-medium-grey;
+    background-color: #E8E8E8;
   }
 }

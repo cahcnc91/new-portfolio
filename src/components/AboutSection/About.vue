@@ -1,6 +1,6 @@
 <template>
   <section class="section-about">
-    <p class="about__text" id="about-section-top">
+    <p class="about__text" data-cy="about-section-header">
       I'm a full-stack developer based in NYC. I love coding, I'm extremely
       social and I'm obsessed with being productive.
     </p>
@@ -8,7 +8,7 @@
       I'm experienced with a range of different technologies<br />
       Some of them are:
     </p>
-    <div class="row">
+    <div data-cy="about-cards" class="row">
       <AboutCard
         :skills="frontEnd.skills"
         :iconName="frontEnd.icon"

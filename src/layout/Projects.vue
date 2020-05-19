@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Cards from "../components/ProjectsSection/Cards.vue";
+import Cards from "../components/ProjectsSection/components/Cards.vue";
 import Navbar from "../components/Navbar.vue";
 
 export default {

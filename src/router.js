@@ -10,6 +10,7 @@ import ClickAndScroll from "./components/ProjectsSection/ClickAndScroll.vue";
 import Portfolio from './components/ProjectsSection/Portfolio.vue';
 import ContactMe from './components/ContactMeSection/ContactMe.vue';
 import SeeMore from './components/ProjectsSection/SeeMore.vue';
+import D3 from './components/ProjectsSection/D3.vue';
 
 Vue.use(Router);
 
@@ -30,11 +31,12 @@ export default new Router({
       component: Thinkempire,
     },
     { path: "/resovere", component: Resovere },
+    { path: "/d3", component: D3},
     { path: "/autocomplete", component: Autocomplete },
     { path: "/clickscroll", component: ClickAndScroll },
     { path: "/portfolio", component: Portfolio},
     { path: "/contact-me", component: ContactMe},
-    {path: "/see-more", component: SeeMore},
+    { path: "/see-more", component: SeeMore},
     { path: "*", component: NotFound },
   ],
 });

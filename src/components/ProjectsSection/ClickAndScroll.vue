@@ -1,7 +1,7 @@
 <template><MyStuff :project="project"></MyStuff></template>
 
 <script>
-import MyStuff from './MyStuff.vue';
+import MyStuff from './components/MyStuff.vue';
 
 export default {
     components: {

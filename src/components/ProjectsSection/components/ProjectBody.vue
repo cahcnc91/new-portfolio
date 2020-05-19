@@ -31,9 +31,9 @@
 </template>
 
 <script>
-import Navbar from "../Navbar.vue";
-import ArrowRight from "../ArrowRight.vue";
-import ArrowLeft from "../ArrowLeft.vue";
+import Navbar from "../../Navbar.vue";
+import ArrowRight from "../../ArrowRight.vue";
+import ArrowLeft from "../../ArrowLeft.vue";
 
 export default {
   components: {

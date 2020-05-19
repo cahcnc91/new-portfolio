@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectBody from "./ProjectBody.vue";
+import ProjectBody from "./components/ProjectBody.vue";
 
 export default {
   components: {

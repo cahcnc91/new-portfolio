@@ -22,8 +22,9 @@
 
       <div class="header__button">
         
-        <router-link to="/work"><button class="button button--green button--size1">VIEW MY WORK</button></router-link>
+        <router-link to="/work"><button data-cy="header-view-work" class="button button--green button--size1">VIEW MY WORK</button></router-link>
         <button
+          id="header-about"
           class="button button--white button--size1 button--about button__margin"
           v-on:click="handleClick"
         >
