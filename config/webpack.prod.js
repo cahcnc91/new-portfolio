@@ -15,7 +15,8 @@ module.exports = {
   },
   mode: "production",
   output: {
-    filename: "[name]-bundle.js",
+    filename: "[name]-[hash].bundle.js",
+    chunkFilename: "[name]-[hash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
   },
@@ -29,10 +30,9 @@ module.exports = {
       chunks: "all",
       cacheGroups: {
         vendor: {
+          test: /[\\/]node_modules[\\/]/,
           name: "vendor",
           chunks: "initial",
-          minChunks: 2
-
         }
       }
     }

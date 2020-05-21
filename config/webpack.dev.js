@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 var dotenv = require('dotenv').config({path: __dirname + '/.env'});
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 console.log(JSON.stringify(dotenv.parsed))
 
@@ -12,7 +13,8 @@ module.exports = {
   },
   mode: "development",
   output: {
-    filename: "[name]-bundle.js",
+    filename: "[name]-[hash].bundle.js",
+    chunkFilename: "[name]-[hash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
   },
@@ -28,10 +30,9 @@ module.exports = {
       chunks: "all",
       cacheGroups: {
         vendor: {
+          test: /[\\/]node_modules[\\/]/,
           name: "vendor",
           chunks: "initial",
-          minChunks: 2
-
         }
       }
     }
@@ -92,7 +93,10 @@ module.exports = {
       },
     ],
   },
+
+  //PLUGINS
   plugins: [
+    new BundleAnalyzerPlugin(),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
