@@ -14,6 +14,7 @@ export default {
   components: { Hero, About },
   methods: {
     handleClick() {
+      console.log("here")
       let el = document.querySelector("#about-section-top"),
         offset = 0,
         duration = 800,

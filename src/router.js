@@ -15,7 +15,7 @@ import D3 from './components/ProjectsSection/D3.vue';
 Vue.use(Router);
 
 export default new Router({
-  // mode: "history",
+  mode: "history",
   routes: [
     {
       path: "/",

@@ -1,6 +1,6 @@
 <template>
   <section class="section-about">
-    <p class="about__text" data-cy="about-section-header">
+    <p class="about__text" data-cy="about-section-header" id="about-section-top">
       I'm a full-stack developer based in NYC. I love coding, I'm extremely
       social and I'm obsessed with being productive.
     </p>
