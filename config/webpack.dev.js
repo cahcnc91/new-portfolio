@@ -23,6 +23,19 @@ module.exports = {
       colors: true,
     },
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+      cacheGroups: {
+        vendor: {
+          name: "vendor",
+          chunks: "initial",
+          minChunks: 2
+
+        }
+      }
+    }
+  },
   devtool: "source-map",
   resolve: {
     alias: {

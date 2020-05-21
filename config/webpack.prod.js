@@ -24,6 +24,19 @@ module.exports = {
       vue$: "vue/dist/vue.esm.js",
     },
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+      cacheGroups: {
+        vendor: {
+          name: "vendor",
+          chunks: "initial",
+          minChunks: 2
+
+        }
+      }
+    }
+  },
   module: {
     rules: [
       {
