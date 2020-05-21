@@ -8,6 +8,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: {
@@ -16,7 +17,7 @@ module.exports = {
   mode: "production",
   output: {
     filename: "[name]-[hash].bundle.js",
-    chunkFilename: "[name]-[hash].bundle.js",
+    chunkFilename: "[name]-[chunkhash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
   },
@@ -26,13 +27,14 @@ module.exports = {
     },
   },
   optimization: {
+    runtimeChunk: true,
     splitChunks: {
       chunks: "all",
       cacheGroups: {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: "vendor",
-          chunks: "initial",
+          chunks: "all",
         }
       }
     }
@@ -106,6 +108,9 @@ module.exports = {
     new UglifyJSPlugin(),
     new CompressionPlugin({
       algorithm: "gzip",
+    }),
+    new ManifestPlugin({
+      fileName: 'manifest.json'
     }),
   ],
 };

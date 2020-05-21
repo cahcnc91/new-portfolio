@@ -4,8 +4,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 var dotenv = require('dotenv').config({path: __dirname + '/.env'});
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-
-console.log(JSON.stringify(dotenv.parsed))
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: {
@@ -14,7 +13,7 @@ module.exports = {
   mode: "development",
   output: {
     filename: "[name]-[hash].bundle.js",
-    chunkFilename: "[name]-[hash].bundle.js",
+    chunkFilename: "[name]-[chunkhash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
   },
@@ -108,6 +107,6 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env": JSON.stringify(dotenv.parsed)
   }),
-
+  new ManifestPlugin(),
   ],
 };
