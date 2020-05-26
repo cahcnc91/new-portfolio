@@ -26,6 +26,7 @@ module.exports = {
     },
   },
   optimization: {
+    moduleIds: 'hashed',
     runtimeChunk: true,
     splitChunks: {
       chunks: "all",
@@ -96,7 +97,8 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       title: "camilacoder Full-Stack Developer | JavaScript",
-      favicon: "./src/images/logo-black.png"
+      favicon: "./src/images/logo-black.png",
+      title: 'Caching',
     }),
     new webpack.DefinePlugin({
       "process.env": {
