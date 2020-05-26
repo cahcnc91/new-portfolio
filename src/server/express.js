@@ -33,7 +33,8 @@ server.use(
     etag: true, // Just being explicit about the default.
     lastModified: true,  // Just being explicit about the default.
     setHeaders: (res, path) => {
-      if (path.endsWith('.html')) {
+      console.log(path)
+      if (path.endsWith('.html.gz')) {
         // All of the project's HTML files end in .html
         res.setHeader('Cache-Control', 'no-cache');
       } else {
