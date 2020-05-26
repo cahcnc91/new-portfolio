@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-// const isProd = process.env.NODE_ENV === "production";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 // const MinifyPlugin = require("babel-minify-webpack-plugin");
